@@ -338,7 +338,7 @@
 - (ZQTabMenuEnsureView *)ensureView{
     if(!_ensureView){
         ZQWS(weakSelf);
-        _ensureView = [[ZQTabMenuEnsureView alloc]initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 71)];
+        _ensureView = [[ZQTabMenuEnsureView alloc]initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 47)];
         _ensureView.clickAction = ^(NSInteger tag) {
             if (tag == 1) { // 重置
                 [weakSelf retSetAction];

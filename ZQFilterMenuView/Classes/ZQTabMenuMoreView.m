@@ -46,7 +46,7 @@
 - (void)creatUI{
     self.backgroundColor = [UIColor whiteColor];
     ZQWS(weakSelf);
-    CGFloat bottomViewH = 73;
+    CGFloat bottomViewH = 47;
     self.ensureView = [[ZQTabMenuEnsureView alloc]initWithFrame:CGRectZero];
     [self addSubview:self.ensureView];
     [self.ensureView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -62,9 +62,9 @@
     };
     
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
-    flowLayout.minimumInteritemSpacing = GAP;
-    flowLayout.minimumLineSpacing = 15;
-    flowLayout.sectionInset = UIEdgeInsetsMake(0, GAP, GAP, GAP);
+    flowLayout.minimumInteritemSpacing = 8;
+    flowLayout.minimumLineSpacing = 8;
+    flowLayout.sectionInset = UIEdgeInsetsMake(8, 16, 8, 16);
     _moreCollectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
     _moreCollectionView.showsHorizontalScrollIndicator = NO;
     _moreCollectionView.backgroundColor = [UIColor whiteColor];
@@ -96,7 +96,6 @@
 
 - (void)setStyleColor:(UIColor *)styleColor {
     _styleColor = styleColor;
-    self.ensureView.styleColor = styleColor;
 }
 
 #pragma mark - Public Method
@@ -187,7 +186,7 @@
 #pragma mark - UICollectionViewDelegateFlowLayout
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
     CGSize size;
-    size = CGSizeMake((ZQScreenWidth - GAP * 4)/3, 34);
+    size = CGSizeMake((ZQScreenWidth - 72) / 4.0, 34);
     return size;
 }
 

@@ -30,8 +30,8 @@
     self.titleLabel.textColor = [UIColor colorWithHexString:@"222222"];
     self.titleLabel.font = [UIFont systemFontOfSize:15];
     self.checkButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    [self.checkButton setImage:[ZQFilterMenuTool imageNamed:@"twhouse_menu_unsel"] forState:UIControlStateNormal];
-    [self.checkButton setImage:[ZQFilterMenuTool imageNamed:@"twhouse_menu_sel"] forState:UIControlStateSelected];
+    [self.checkButton setImage:nil forState:UIControlStateNormal];
+    [self.checkButton setImage:[UIImage imageNamed:@"twhouse_menu_sels"] forState:UIControlStateSelected];
     self.checkButton.userInteractionEnabled = NO;
     self.checkButton.hidden = YES;
     [self.contentView addSubview:self.checkButton];
@@ -77,14 +77,22 @@
         checkBtnR = -20;
         self.checkButton.selected = isChoice;
     }else{
-        self.checkButton.hidden = YES;
-        checkBtnW = 0;
+        if ([_model.plistKey isEqualToString:@"type"]) {
+            self.checkButton.hidden = NO;
+            checkBtnW = 15;
+            checkBtnR = -20;
+            self.checkButton.selected = isChoice;
+        }
+        else{
+            self.checkButton.hidden = YES;
+            checkBtnW = 0;
+        }
     }
     [self.checkButton mas_updateConstraints:^(MASConstraintMaker *make) {
         make.width.mas_equalTo(checkBtnW);
         make.right.mas_equalTo(checkBtnR);
     }];
-    self.titleLabel.textColor = isChoice ? (self.styleColor ? self.styleColor :[UIColor colorWithHexString:@"ff8000"]) : [UIColor colorWithHexString:@"222222"];
+    self.titleLabel.textColor = isChoice ? (self.styleColor ? self.styleColor :[UIColor colorWithHexString:@"3D7CF5"]) : [UIColor colorWithHexString:@"222222"];
 }
 
 

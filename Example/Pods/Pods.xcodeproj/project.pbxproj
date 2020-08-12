@@ -145,20 +145,20 @@
 /* Begin PBXFileReference section */
 		00D05DADA6A8AB7037B1629B72FCBC57 /* ZQSeperateLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZQSeperateLine.m; path = ZQFilterMenuView/Classes/ZQSeperateLine.m; sourceTree = "<group>"; };
 		030AE2CF237F7B3C224D589B049C091C /* ZQFilterMenuView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQFilterMenuView-prefix.pch"; sourceTree = "<group>"; };
-		046ECFBFB686D8789E7A55D8E038EF71 /* ZQFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZQFoundationKit.framework; path = ZQFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		046ECFBFB686D8789E7A55D8E038EF71 /* ZQFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZQFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		068B7A571C77509E5D85D3854B15E07D /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		09163383D7F06BA6CE114C812AEB471A /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		09384E303292047ABF370D407F457830 /* Pods-ZQFilterMenuView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZQFilterMenuView_Tests-dummy.m"; sourceTree = "<group>"; };
 		0D98249AC8A6D56F28E14E6E9BE1533C /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		12AA7D4A2B3DF2F80A582F3A44BCA566 /* Pods_ZQFilterMenuView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZQFilterMenuView_Example.framework; path = "Pods-ZQFilterMenuView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		12AA7D4A2B3DF2F80A582F3A44BCA566 /* Pods_ZQFilterMenuView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQFilterMenuView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1707396B4A620BC6AAF80D3B988A943C /* ZQTabMenuView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZQTabMenuView.m; path = ZQFilterMenuView/Classes/ZQTabMenuView.m; sourceTree = "<group>"; };
 		18D765A141D8F8A7D6F7BAD1987824FC /* ZQFoundationKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQFoundationKit.h; path = ZQFoundationKit/Classes/ZQFoundationKit.h; sourceTree = "<group>"; };
-		195BD48E28AA08F69FB9ABFDA45109BF /* ZQFilterMenuView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ZQFilterMenuView.bundle; path = "ZQFilterMenuView-ZQFilterMenuView.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
+		195BD48E28AA08F69FB9ABFDA45109BF /* ZQFilterMenuView.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZQFilterMenuView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A22A697AF317BC21B169F998E6AD660 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		1AB63E9FB11B11090BF7A41001539811 /* ZQFoundationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZQFoundationKit-dummy.m"; sourceTree = "<group>"; };
 		1D7550B8C2919A6C83D3952C905B7B72 /* ZQFoundationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQFoundationKit-umbrella.h"; sourceTree = "<group>"; };
 		1FB2B85D6FCCE414783684602D94A381 /* Pods-ZQFilterMenuView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZQFilterMenuView_Example.modulemap"; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C241B485CC1D7F4717B326252A1827 /* ZQFoundationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQFoundationKit-prefix.pch"; sourceTree = "<group>"; };
 		257D8ECCC86975B08209D1A6B21A7B34 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		2AA12CA5E273E7241E34F703B7534726 /* ZQTabMenuEnsureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQTabMenuEnsureView.h; path = ZQFilterMenuView/Classes/ZQTabMenuEnsureView.h; sourceTree = "<group>"; };
@@ -190,16 +190,16 @@
 		59A41B00C71D36E6935D58ED311D89A6 /* ZQFilterMenuTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZQFilterMenuTool.m; path = ZQFilterMenuView/Classes/ZQFilterMenuTool.m; sourceTree = "<group>"; };
 		5B58C15D60909269D8A8996EE20849CF /* ZQTabMenuMoreView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZQTabMenuMoreView.m; path = ZQFilterMenuView/Classes/ZQTabMenuMoreView.m; sourceTree = "<group>"; };
 		5DF5B72048BA6A6FEA56594CC88A01F6 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		61A70D341E9EAF02B15B4B17C32625C3 /* ZQFilterMenuView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ZQFilterMenuView.framework; path = ZQFilterMenuView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61A70D341E9EAF02B15B4B17C32625C3 /* ZQFilterMenuView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZQFilterMenuView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63964411AE12FA60AD31DDDB41D077DD /* ZQTabMenuView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQTabMenuView.h; path = ZQFilterMenuView/Classes/ZQTabMenuView.h; sourceTree = "<group>"; };
 		63C4142EB5BF8C87EC6A923B3F1AB3AE /* Pods-ZQFilterMenuView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZQFilterMenuView_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6690EBE8172BF335617A5A372FD7C4E3 /* ZQTabControl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQTabControl.h; path = ZQFilterMenuView/Classes/ZQTabControl.h; sourceTree = "<group>"; };
-		675EC817CDD2F9BD732E9C75B974885E /* ZQFilterMenuView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = ZQFilterMenuView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		675EC817CDD2F9BD732E9C75B974885E /* ZQFilterMenuView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = ZQFilterMenuView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6A6BF004B6E5BE02E84B1D650E314015 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		6BCE92E51B23562B7436C51A1B246648 /* ZQFoundationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZQFoundationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7215F76C4AC306BC42149354E8655B74 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		73DDE4ADF643BFD84BD57AF2D7AAF91F /* ZQTabMenuBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQTabMenuBar.h; path = ZQFilterMenuView/Classes/ZQTabMenuBar.h; sourceTree = "<group>"; };
-		74F501ECCBD95DD5633D66CDFBB3B22C /* Pods_ZQFilterMenuView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ZQFilterMenuView_Tests.framework; path = "Pods-ZQFilterMenuView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		74F501ECCBD95DD5633D66CDFBB3B22C /* Pods_ZQFilterMenuView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZQFilterMenuView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76C20515EC3D570ECAE9D6CEC51DA909 /* Pods-ZQFilterMenuView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZQFilterMenuView_Example-frameworks.sh"; sourceTree = "<group>"; };
 		7774EC07AC856B2D9157B36F7E9A67BF /* ZQFoundationKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZQFoundationKit.debug.xcconfig; sourceTree = "<group>"; };
 		78DE596E7A0B97E784AA1C9038B7F527 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
@@ -218,12 +218,12 @@
 		8AB7E57517BE48750E78E0C4C98B0660 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		8E2DA1523DAB677528EA7E81CA69B76F /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		9008407EE1DB873047B8DB0D6098D50A /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
-		940A06F98275CCCE32509561315CC72F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		940A06F98275CCCE32509561315CC72F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		94AA45788ACD7D48DD5AFD0E3BD4F03A /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		967CE92A13F15DA28C235A035ACFFFF2 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		9861A264D8765ED1765C9ECABDBCE33E /* Pods-ZQFilterMenuView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQFilterMenuView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CF80B929F43B5EC8644C0C79D06E454 /* ZQFilterMenuView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZQFilterMenuView.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A3EF0139427CF6E3EC5F95899E7F38AF /* Pods-ZQFilterMenuView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZQFilterMenuView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AA57AD3E16C165CBA9870D6463B3BE17 /* Pods-ZQFilterMenuView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZQFilterMenuView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		AA634016DC570F430AA15AE1DD420B9A /* ZQFliterSelectData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZQFliterSelectData.m; path = ZQFilterMenuView/Classes/ZQFliterSelectData.m; sourceTree = "<group>"; };
@@ -245,7 +245,7 @@
 		D198E5D4456FB71A488EC11FE6AE00ED /* ZQTabMenuMoreColHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ZQTabMenuMoreColHeaderView.m; path = ZQFilterMenuView/Classes/ZQTabMenuMoreColHeaderView.m; sourceTree = "<group>"; };
 		D21A1E6B95B4509F13A9CEA5D7F0A389 /* Pods-ZQFilterMenuView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZQFilterMenuView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D44072B49F80499ACF3B198FBD8CFECD /* UIColor+Util.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Util.h"; path = "ZQFoundationKit/Classes/UIColorExtension/UIColor+Util.h"; sourceTree = "<group>"; };
-		D7BFD1B02DAF53C5D5470B2272F508FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D7BFD1B02DAF53C5D5470B2272F508FE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		DADDE312FFCE24C1C1AC58C64E24F49D /* Pods-ZQFilterMenuView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZQFilterMenuView_Tests.modulemap"; sourceTree = "<group>"; };
 		DD985C2A4ADFF253B61CC93D4F09D6B8 /* ZQSeperateLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQSeperateLine.h; path = ZQFilterMenuView/Classes/ZQSeperateLine.h; sourceTree = "<group>"; };
 		E0EF046DEEF28B468AB625B2B3BEC714 /* Pods-ZQFilterMenuView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZQFilterMenuView_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -344,7 +344,6 @@
 				F76020F7705D37C3454137212B03DFE6 /* ViewController+MASAdditions.m */,
 				3CAC5D28D92ABEA7D10A11BC5466B087 /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -420,6 +419,9 @@
 		8869E04952B04F7311CB178675733FEC /* ZQFilterMenuView */ = {
 			isa = PBXGroup;
 			children = (
+				6F9278B9C51E984B3A8D487EA3C73ADD /* Pod */,
+				85173DA13C80A10157CA8B08458C0B88 /* Resources */,
+				E2DA64C2D7D86196E49DDBA30AE32C8C /* Support Files */,
 				2C769EEF885ECBAE3F88CD494AB8F15F /* ZQFilterMenuHeader.h */,
 				35BA0ED9938EDD7DC47C15835CBE4D01 /* ZQFilterMenuTool.h */,
 				59A41B00C71D36E6935D58ED311D89A6 /* ZQFilterMenuTool.m */,
@@ -450,9 +452,6 @@
 				4F49C0A4C44EB95C5E844805ED56F6F2 /* ZQTabMenuTableViewCell.m */,
 				63964411AE12FA60AD31DDDB41D077DD /* ZQTabMenuView.h */,
 				1707396B4A620BC6AAF80D3B988A943C /* ZQTabMenuView.m */,
-				6F9278B9C51E984B3A8D487EA3C73ADD /* Pod */,
-				85173DA13C80A10157CA8B08458C0B88 /* Resources */,
-				E2DA64C2D7D86196E49DDBA30AE32C8C /* Support Files */,
 			);
 			name = ZQFilterMenuView;
 			path = ../..;
@@ -474,7 +473,6 @@
 				5E1E37788F11605CA0FA44B5BE17F93A /* Support Files */,
 				6B7432106470455EE3A587A1B1D5CB87 /* UIColorExtension */,
 			);
-			name = ZQFoundationKit;
 			path = ZQFoundationKit;
 			sourceTree = "<group>";
 		};
@@ -1225,8 +1223,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

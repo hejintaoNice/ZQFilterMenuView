@@ -32,14 +32,14 @@
     tabControl.tabControlType = type;
     tabControl.menuViewHeigthRatio = 0.5;
     tabControl.menuCellHeigth = 44;
-    tabControl.selTitleColor = [UIColor colorWithHexString:@"ff8000"];
-    tabControl.titleColor = [UIColor colorWithHexString:@"222222"];
+    tabControl.selTitleColor = [UIColor colorWithHexString:@"3D7CF5"];
+    tabControl.titleColor = [UIColor colorWithHexString:@"20283A"];
     [tabControl setTitle:title forState:UIControlStateNormal];
     tabControl.titleLabel.font = [UIFont systemFontOfSize:14];
     tabControl.titleLabel.lineBreakMode = NSLineBreakByTruncatingTail;
     [tabControl setTitleColor:tabControl.titleColor forState:UIControlStateNormal];
-    [tabControl setImage:[ZQFilterMenuTool imageNamed:@"twhouse_menu_down"] forState:UIControlStateNormal];
-    [tabControl setImage:[ZQFilterMenuTool imageNamed:@"twhouse_menu_up"] forState:UIControlStateSelected];
+    [tabControl setImage:[UIImage imageNamed:@"twhouse_menu_downs"] forState:UIControlStateNormal];
+    [tabControl setImage:[UIImage imageNamed:@"twhouse_menu_ups"] forState:UIControlStateSelected];
     return tabControl;
 }
 
@@ -49,7 +49,7 @@
 
 - (void)adjustFrame {
     [self setTitleEdgeInsets:UIEdgeInsetsMake(0, -self.imageView.bounds.size.width + 2, 0, self.imageView.bounds.size.width + 10)];
-    [self setImageEdgeInsets:UIEdgeInsetsMake(0, self.titleLabel.bounds.size.width + 10, 0, -self.titleLabel.bounds.size.width + 2)];
+    [self setImageEdgeInsets:UIEdgeInsetsMake(0, self.titleLabel.bounds.size.width, -4, -self.titleLabel.bounds.size.width + 2)];
 }
 
 - (void)setFontSize:(CGFloat)fontSize{
@@ -111,7 +111,7 @@
 
 /// 设置titleColor
 - (void)setControlTitleStatus:(BOOL)isSelect title:(NSString *)title selTitle:(NSString *)selTitle{
-    [self adjustTitle:(isSelect ? selTitle : title) textColor:isSelect ? self.selTitleColor : self.titleColor];
+    [self adjustTitle:title textColor:isSelect ? self.selTitleColor : self.titleColor];
 }
 
 - (void)setControlTitle:(NSString *)title{

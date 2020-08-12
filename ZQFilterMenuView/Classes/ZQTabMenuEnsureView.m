@@ -36,33 +36,30 @@
 
 #define GAP  20
 - (void)creatUI{
-    CGFloat width = (ZQScreenWidth - GAP * 3)/2;
     CGFloat heigth = 47;
-    CGFloat y = (self.frame.size.height - heigth)/2;
     self.backgroundColor = [UIColor whiteColor];
     //重置按鈕
-    UIButton *resetBtn = [self creatButtonTitle:@"重置" color:[UIColor colorWithHexString:@"999999"] fontSize:16 target:self action:@selector(btnAction:)];
-    resetBtn.backgroundColor = [UIColor colorWithHexString:@"f5f5f5"];
+    UIButton *resetBtn = [self creatButtonTitle:@"重置" color:[UIColor colorWithHexString:@"687CA4"] fontSize:16 target:self action:@selector(btnAction:)];
+    resetBtn.backgroundColor = [UIColor whiteColor];
     resetBtn.tag = 1;
     [self addSubview:resetBtn];
-    resetBtn.frame = CGRectMake(GAP, y, width, heigth);
     [resetBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.mas_equalTo(GAP);
+        make.left.mas_equalTo(0);
         make.height.mas_equalTo(heigth);
-        make.width.mas_equalTo(width);
+        make.width.mas_equalTo((ZQScreenWidth / 3.0));
         make.centerY.equalTo(self);
     }];
     self.resetBtn = resetBtn;
     
     //確定按鈕
-    UIButton *confirmBtn = [self creatButtonTitle:@"確定" color:[UIColor whiteColor] fontSize:16 target:self action:@selector(btnAction:)];
-    confirmBtn.backgroundColor = [UIColor colorWithHexString:@"ff8000"];
+    UIButton *confirmBtn = [self creatButtonTitle:@"确定" color:[UIColor whiteColor] fontSize:16 target:self action:@selector(btnAction:)];
+    confirmBtn.backgroundColor = [UIColor colorWithHexString:@"3D7CF5"];
     confirmBtn.tag = 2;
     [self addSubview:confirmBtn];
-    confirmBtn.frame = CGRectMake(resetBtn.frame.size.width + resetBtn.frame.origin.x + GAP, y, width, heigth);
     [confirmBtn mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.right.mas_equalTo(-GAP);
-        make.height.bottom.width.equalTo(resetBtn);
+        make.right.mas_equalTo(0);
+        make.height.bottom.equalTo(resetBtn);
+        make.width.mas_equalTo(2 * (ZQScreenWidth / 3.0));
     }];
     self.confirmBtn = confirmBtn;
     [self addSubview:self.topLine];
@@ -86,8 +83,6 @@
     if(title)[btn setTitle:title forState:UIControlStateNormal];
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     btn.titleLabel.font = [UIFont systemFontOfSize:size];
-    btn.clipsToBounds = YES;
-    btn.layer.cornerRadius = 2;
     if(color)[btn setTitleColor:color forState:UIControlStateNormal];
     return btn;
 }
