@@ -77,7 +77,7 @@
         checkBtnR = -20;
         self.checkButton.selected = isChoice;
     }else{
-        if ([_model.plistKey isEqualToString:@"type"]) {
+        if ([_model.plistKey isEqualToString:@"type"] || [_model.plistKey isEqualToString:@"region"]) {
             self.checkButton.hidden = NO;
             checkBtnW = 15;
             checkBtnR = -20;
