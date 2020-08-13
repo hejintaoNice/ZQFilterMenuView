@@ -14,6 +14,9 @@
 #import <Masonry/Masonry.h>
 #import <ZQFoundationKit/UIColor+Util.h>
 #import "ZQFliterModelHeader.h"
+#import "DoubleSliderView.h"
+#import "UIView+Extension.h"
+
 @interface ZQTabMenuMoreView()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (strong, nonatomic) UICollectionView *moreCollectionView;
 
@@ -21,6 +24,19 @@
 @property (nonatomic, assign) BOOL isResetStore;
 
 @property (nonatomic, strong) ZQTabMenuEnsureView *ensureView;
+
+@property (nonatomic, strong) UIView *sliderBgView;
+@property (nonatomic, strong) UILabel *tipLbl;
+@property (nonatomic, strong) UILabel *leftLbl;
+@property (nonatomic, strong) UILabel *rightLbl;
+@property (nonatomic, strong) UILabel *topLbl;
+
+@property (nonatomic, assign) NSInteger minAge;
+@property (nonatomic, assign) NSInteger maxAge;
+@property (nonatomic, assign) NSInteger curMinAge;
+@property (nonatomic, assign) NSInteger curMaxAge;
+
+@property (nonatomic, strong) DoubleSliderView *doubleSliderView;
 
 @property (nonatomic, strong) ZQTabMenuMoreFilterData *fliterData;
 
@@ -43,6 +59,126 @@
     return _fliterData;
 }
 
+- (ZQTabMenuMoreFilterData *)fliterData{
+    if (!_fliterData) {
+        _fliterData = [[ZQTabMenuMoreFilterData alloc]init];
+    }
+    return _fliterData;
+}
+
+-(UIView *)sliderBgView{
+    if (!_sliderBgView) {
+        _sliderBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 120)];
+        _sliderBgView.backgroundColor = [UIColor whiteColor];
+    }
+    return _sliderBgView;
+}
+
+-(UILabel *)tipLbl{
+    if (!_tipLbl) {
+        _tipLbl = [[UILabel alloc] init];
+        _tipLbl.textColor = [UIColor colorWithHexString:@"333333"];
+        _tipLbl.font = [UIFont systemFontOfSize:15 weight:UIFontWeightSemibold];
+        _tipLbl.text = @"价格";
+    }
+    return _tipLbl;;
+}
+
+-(UILabel *)leftLbl{
+    if (!_leftLbl) {
+        _leftLbl = [[UILabel alloc] init];
+        _leftLbl.textColor = [UIColor colorWithHexString:@"687CA4"];
+        _leftLbl.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
+        _leftLbl.text = @"¥0";
+    }
+    return _leftLbl;;
+}
+
+-(UILabel *)rightLbl{
+    if (!_rightLbl) {
+        _rightLbl = [[UILabel alloc] init];
+        _rightLbl.textColor = [UIColor colorWithHexString:@"687CA4"];
+        _rightLbl.font = [UIFont systemFontOfSize:12 weight:UIFontWeightRegular];
+        _rightLbl.text = @"¥1000以上";
+    }
+    return _rightLbl;;
+}
+
+-(UILabel *)topLbl{
+    if (!_topLbl) {
+        _topLbl = [[UILabel alloc] init];
+        _topLbl.textColor = [UIColor colorWithHexString:@"3D7CF5"];
+        _topLbl.font = [UIFont systemFontOfSize:15 weight:UIFontWeightRegular];
+        _topLbl.text = @"";
+    }
+    return _topLbl;;
+}
+
+- (DoubleSliderView *)doubleSliderView {
+    if (!_doubleSliderView) {
+        _doubleSliderView = [[DoubleSliderView alloc] initWithFrame:CGRectMake(20, 60, ZQScreenWidth - 40, 55)];
+        _doubleSliderView.needAnimation = true;
+        __weak typeof(self) weakSelf = self;
+        _doubleSliderView.sliderBtnLocationChangeBlock = ^(BOOL isLeft, BOOL finish) {
+            [weakSelf sliderValueChangeActionIsLeft:isLeft finish:finish];
+        };
+    }
+    return _doubleSliderView;
+}
+
+#pragma mark - action
+//根据值获取整数
+
+- (CGFloat)fetchIntFromValue:(CGFloat)value {
+    CGFloat newValue = floorf(value);
+    CGFloat changeValue = value - newValue;
+    if (changeValue >= 0.5) {
+        newValue = newValue + 1;
+    }
+    return newValue;
+}
+
+- (void)sliderValueChangeActionIsLeft: (BOOL)isLeft finish: (BOOL)finish {
+    if (isLeft) {
+        CGFloat age = (self.maxAge - self.minAge) * self.doubleSliderView.curMinValue;
+        CGFloat tmpAge = [self fetchIntFromValue:age];
+        self.curMinAge = (NSInteger)tmpAge + self.minAge;
+        [self changeAgeTipsText];
+    }else {
+        CGFloat age = (self.maxAge - self.minAge) * self.doubleSliderView.curMaxValue;
+        CGFloat tmpAge = [self fetchIntFromValue:age];
+        self.curMaxAge = (NSInteger)tmpAge + self.minAge;
+        [self changeAgeTipsText];
+    }
+    if (finish) {
+        [self changeSliderValue];
+    }
+}
+
+//值取整后可能改变了原始的大小，所以需要重新改变滑块的位置
+- (void)changeSliderValue {
+    CGFloat finishMinValue = (CGFloat)(self.curMinAge - self.minAge)/(CGFloat)(self.maxAge - self.minAge);
+    CGFloat finishMaxValue = (CGFloat)(self.curMaxAge - self.minAge)/(CGFloat)(self.maxAge - self.minAge);
+    self.doubleSliderView.curMinValue = finishMinValue;
+    self.doubleSliderView.curMaxValue = finishMaxValue;
+    [self.doubleSliderView changeLocationFromValue];
+}
+
+- (void)changeAgeTipsText {
+    if (self.curMinAge == self.curMaxAge) {
+        if (self.curMinAge == 0) {
+            self.topLbl.text = @"";
+        }
+        else{
+            self.topLbl.text = [NSString stringWithFormat:@"￥%li", self.curMinAge];
+        }
+        
+    }else {
+        self.topLbl.text = [NSString stringWithFormat:@"￥%li~%li", self.curMinAge, self.curMaxAge];
+    }
+}
+
+
 - (void)creatUI{
     self.backgroundColor = [UIColor whiteColor];
     ZQWS(weakSelf);
@@ -61,6 +197,13 @@
         }
     };
     
+    self.minAge = 0;
+    self.maxAge = 1000;
+    self.curMinAge = 0;
+    self.curMaxAge = 1000;
+    
+    [self configSlider];
+    
     UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
     flowLayout.minimumInteritemSpacing = 8;
     flowLayout.minimumLineSpacing = 8;
@@ -78,6 +221,44 @@
     [_moreCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.ensureView.mas_top);
         make.left.right.top.equalTo(self);
+    }];
+}
+
+-(void)configSlider{
+    
+    [self addSubview:self.sliderBgView];
+    [self.sliderBgView addSubview:self.tipLbl];
+    [self.sliderBgView addSubview:self.leftLbl];
+    [self.sliderBgView addSubview:self.rightLbl];
+    [self.sliderBgView addSubview:self.topLbl];
+    [self.sliderBgView addSubview:self.doubleSliderView];
+    
+    [self.tipLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.mas_left).offset(20);
+        make.top.equalTo(self.mas_top).offset(10);
+    }];
+    
+    [self.leftLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.mas_left).offset(20);
+        make.top.equalTo(self.tipLbl.mas_bottom).offset(15);
+        make.height.mas_equalTo(18);
+    }];
+    
+    [self.rightLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.right.equalTo(self.mas_right).offset(-20);
+        make.centerY.equalTo(self.leftLbl);
+    }];
+    
+    [self.topLbl mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.tipLbl.mas_right).offset(6);
+        make.centerY.equalTo(self.tipLbl);
+    }];
+    
+    [self.doubleSliderView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.mas_left).offset(20);
+        make.right.equalTo(self.mas_right).offset(-20);
+        make.top.equalTo(self.leftLbl.mas_bottom).offset(5);
+        make.height.mas_equalTo(45);
     }];
 }
 

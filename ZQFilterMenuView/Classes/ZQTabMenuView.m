@@ -404,6 +404,7 @@
     NSInteger listViewIndex = tableView.tag;
     ZQTabMenuTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"TabMenuCell"];
     NSArray<ZQItemModel *> *dataSource = [self.selectData getListDataSource:self.listDataSource listViewIndex:listViewIndex];
+    BOOL show = [ZQFliterSelectData isHaveChildModel:dataSource];
     ZQItemModel *model = dataSource[indexPath.row];
     model.indexPath = indexPath;//标记数据模型下标
     cell.menuFontSize = self.menuFontSize;

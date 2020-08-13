@@ -160,6 +160,10 @@
 		1FB2B85D6FCCE414783684602D94A381 /* Pods-ZQFilterMenuView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZQFilterMenuView_Example.modulemap"; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C241B485CC1D7F4717B326252A1827 /* ZQFoundationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQFoundationKit-prefix.pch"; sourceTree = "<group>"; };
+		21B8ABC824E4E0AE00B1C863 /* DoubleSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleSliderView.m; sourceTree = "<group>"; };
+		21B8ABC924E4E0AE00B1C863 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		21B8ABCA24E4E0AE00B1C863 /* DoubleSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleSliderView.h; sourceTree = "<group>"; };
+		21B8ABCB24E4E0AE00B1C863 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		257D8ECCC86975B08209D1A6B21A7B34 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		2AA12CA5E273E7241E34F703B7534726 /* ZQTabMenuEnsureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQTabMenuEnsureView.h; path = ZQFilterMenuView/Classes/ZQTabMenuEnsureView.h; sourceTree = "<group>"; };
 		2B732FA1C9972425697B9DE8EE94680F /* twhouse_menu_sel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "twhouse_menu_sel@2x.png"; path = "ZQFilterMenuView/Assets/twhouse_menu_sel@2x.png"; sourceTree = "<group>"; };
@@ -389,6 +393,10 @@
 		6B7432106470455EE3A587A1B1D5CB87 /* UIColorExtension */ = {
 			isa = PBXGroup;
 			children = (
+				21B8ABCA24E4E0AE00B1C863 /* DoubleSliderView.h */,
+				21B8ABC824E4E0AE00B1C863 /* DoubleSliderView.m */,
+				21B8ABCB24E4E0AE00B1C863 /* UIView+Extension.h */,
+				21B8ABC924E4E0AE00B1C863 /* UIView+Extension.m */,
 				D44072B49F80499ACF3B198FBD8CFECD /* UIColor+Util.h */,
 				CD57DB739E75AAF8340A1C4D13A395C6 /* UIColor+Util.m */,
 			);
