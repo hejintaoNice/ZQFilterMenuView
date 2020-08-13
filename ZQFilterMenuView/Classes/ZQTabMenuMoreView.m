@@ -61,7 +61,7 @@
 
 -(UIView *)sliderBgView{
     if (!_sliderBgView) {
-        _sliderBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 105)];
+        _sliderBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 115)];
         _sliderBgView.backgroundColor = [UIColor whiteColor];
     }
     return _sliderBgView;
@@ -234,7 +234,7 @@
     
     [self.leftLbl mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(20);
-        make.top.equalTo(self.tipLbl.mas_bottom).offset(15);
+        make.top.equalTo(self.tipLbl.mas_bottom).offset(10);
         make.height.mas_equalTo(18);
     }];
     
@@ -251,7 +251,7 @@
     [self.doubleSliderView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.mas_left).offset(20);
         make.right.equalTo(self.mas_right).offset(-20);
-        make.top.equalTo(self.leftLbl.mas_bottom).offset(5);
+        make.top.equalTo(self.leftLbl.mas_bottom);
         make.height.mas_equalTo(45);
     }];
 }
