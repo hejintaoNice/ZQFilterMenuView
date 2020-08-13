@@ -25,7 +25,7 @@
 - (void)creatUI{
     self.titleLabel = [[UILabel alloc]init];
     self.titleLabel.textColor = [UIColor colorWithHexString:@"333333"];
-    self.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+    self.titleLabel.font = [UIFont systemFontOfSize:15 weight:UIFontWeightSemibold];
     [self addSubview:self.titleLabel];
     [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(@20);

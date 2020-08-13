@@ -61,7 +61,7 @@
 
 -(UIView *)sliderBgView{
     if (!_sliderBgView) {
-        _sliderBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 120)];
+        _sliderBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 105)];
         _sliderBgView.backgroundColor = [UIColor whiteColor];
     }
     return _sliderBgView;
@@ -109,7 +109,7 @@
 
 - (DoubleSliderView *)doubleSliderView {
     if (!_doubleSliderView) {
-        _doubleSliderView = [[DoubleSliderView alloc] initWithFrame:CGRectMake(20, 60, ZQScreenWidth - 40, 55)];
+        _doubleSliderView = [[DoubleSliderView alloc] initWithFrame:CGRectMake(20, 60, ZQScreenWidth - 40, 35)];
         _doubleSliderView.needAnimation = true;
         __weak typeof(self) weakSelf = self;
         _doubleSliderView.sliderBtnLocationChangeBlock = ^(BOOL isLeft, BOOL finish) {
@@ -367,7 +367,7 @@
 
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section{
-    return CGSizeMake(ZQScreenWidth, 60);
+    return CGSizeMake(ZQScreenWidth, 40);
 }
 
 @end
