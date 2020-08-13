@@ -213,7 +213,8 @@
     [self addSubview:_moreCollectionView];
     [_moreCollectionView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.ensureView.mas_top);
-        make.left.right.top.equalTo(self);
+        make.left.right.equalTo(self);
+        make.top.equalTo(self.sliderBgView.mas_bottom);
     }];
 }
 
