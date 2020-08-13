@@ -59,13 +59,6 @@
     return _fliterData;
 }
 
-- (ZQTabMenuMoreFilterData *)fliterData{
-    if (!_fliterData) {
-        _fliterData = [[ZQTabMenuMoreFilterData alloc]init];
-    }
-    return _fliterData;
-}
-
 -(UIView *)sliderBgView{
     if (!_sliderBgView) {
         _sliderBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, ZQScreenWidth, 120)];
@@ -298,7 +291,7 @@
     [self.fliterData setLastSelectedDataSource:self.ListDataSource];
     [self setTabControlTitle];
     if (self.selectBlock) {
-        self.selectBlock(self,self.fliterData.lastMoreSeletedDic,self.fliterData.moreSeletedDic);
+        self.selectBlock(self,self.fliterData.lastMoreSeletedDic,self.fliterData.moreSeletedDic,self.curMinAge,self.curMaxAge);
     }
 }
 
