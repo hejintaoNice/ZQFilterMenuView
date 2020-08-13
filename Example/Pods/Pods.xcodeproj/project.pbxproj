@@ -160,10 +160,6 @@
 		1FB2B85D6FCCE414783684602D94A381 /* Pods-ZQFilterMenuView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ZQFilterMenuView_Example.modulemap"; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20C241B485CC1D7F4717B326252A1827 /* ZQFoundationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZQFoundationKit-prefix.pch"; sourceTree = "<group>"; };
-		21B8ABC824E4E0AE00B1C863 /* DoubleSliderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DoubleSliderView.m; sourceTree = "<group>"; };
-		21B8ABC924E4E0AE00B1C863 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		21B8ABCA24E4E0AE00B1C863 /* DoubleSliderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DoubleSliderView.h; sourceTree = "<group>"; };
-		21B8ABCB24E4E0AE00B1C863 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		257D8ECCC86975B08209D1A6B21A7B34 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
 		2AA12CA5E273E7241E34F703B7534726 /* ZQTabMenuEnsureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZQTabMenuEnsureView.h; path = ZQFilterMenuView/Classes/ZQTabMenuEnsureView.h; sourceTree = "<group>"; };
 		2B732FA1C9972425697B9DE8EE94680F /* twhouse_menu_sel@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "twhouse_menu_sel@2x.png"; path = "ZQFilterMenuView/Assets/twhouse_menu_sel@2x.png"; sourceTree = "<group>"; };
@@ -393,10 +389,6 @@
 		6B7432106470455EE3A587A1B1D5CB87 /* UIColorExtension */ = {
 			isa = PBXGroup;
 			children = (
-				21B8ABCA24E4E0AE00B1C863 /* DoubleSliderView.h */,
-				21B8ABC824E4E0AE00B1C863 /* DoubleSliderView.m */,
-				21B8ABCB24E4E0AE00B1C863 /* UIView+Extension.h */,
-				21B8ABC924E4E0AE00B1C863 /* UIView+Extension.m */,
 				D44072B49F80499ACF3B198FBD8CFECD /* UIColor+Util.h */,
 				CD57DB739E75AAF8340A1C4D13A395C6 /* UIColor+Util.m */,
 			);
@@ -983,7 +975,6 @@
 /* Begin XCBuildConfiguration section */
 		0849F0FEC034ABEA1C1D48F5BE26631F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CF80B929F43B5EC8644C0C79D06E454 /* ZQFilterMenuView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZQFilterMenuView";
@@ -1000,7 +991,6 @@
 		};
 		100ADF387734A8B912B29D28EE72A4E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7B167B853B91E07C10237CF6C8AEE3B4 /* Pods-ZQFilterMenuView_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1033,7 +1023,6 @@
 		};
 		2C7C29DEE78776A3A69EEF550825BCD5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9861A264D8765ED1765C9ECABDBCE33E /* Pods-ZQFilterMenuView_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1066,7 +1055,6 @@
 		};
 		401A6F79B10C06BB1FE29BFD64BE6C4D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B880F55D51F759DCD0BB996E4E3EDF85 /* Pods-ZQFilterMenuView_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1100,7 +1088,6 @@
 		};
 		4A887B442EE06FBABDAE676C28981FB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 887DACEE6EBF7BDBA8239787C75258B1 /* ZQFilterMenuView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ZQFilterMenuView";
@@ -1117,7 +1104,6 @@
 		};
 		6937BDCA511479ACC614AF0793FFC06E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C43A097D94B0AB74DDBD3538076D69C6 /* Masonry.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1149,7 +1135,6 @@
 		};
 		84F5F9812FA764A0779E9882AB4B0269 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7774EC07AC856B2D9157B36F7E9A67BF /* ZQFoundationKit.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1303,7 +1288,6 @@
 		};
 		992B69ACAFE4C32B29CDFDBD818F2D9D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3EF0139427CF6E3EC5F95899E7F38AF /* Pods-ZQFilterMenuView_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1337,7 +1321,6 @@
 		};
 		BA4056057FFB94592AFB9C154AA0F81D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BA783FC51F2B7FC99FA152BF4CAE458A /* ZQFoundationKit.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1369,7 +1352,6 @@
 		};
 		D45B0094A457EE4A52D5D84A8A18BEA5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DF5B72048BA6A6FEA56594CC88A01F6 /* Masonry.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1400,7 +1382,6 @@
 		};
 		DB925D145A579D1F1DFB5D0E23E70B02 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CF80B929F43B5EC8644C0C79D06E454 /* ZQFilterMenuView.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1432,7 +1413,6 @@
 		};
 		F3FDFECDC58BBBE5444E044DDDCC8F95 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 887DACEE6EBF7BDBA8239787C75258B1 /* ZQFilterMenuView.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
