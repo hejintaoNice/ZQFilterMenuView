@@ -284,6 +284,10 @@
 
 #pragma mark - Action Method
 - (void)retSetAction{
+    self.curMinAge = 0;
+    self.curMaxAge = 1000;
+    self.topLbl.text = @"";
+    [self changeSliderValue];
     [self.fliterData removeAllSelectData];
     [self.moreCollectionView reloadData];
 }
